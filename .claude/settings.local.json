@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__figma__get_metadata",
+      "mcp__figma__get_design_context",
+      "mcp__figma__get_screenshot",
+      "Bash(for file in InvestorsBenefits.tsx ArtistBenefits.tsx RealEstateBenefits.tsx CollectorsBenefits.tsx MemberBenefits.tsx MuseumsBenefits.tsx ArtistsBenefits.tsx)",
+      "Bash(do)",
+      "Bash(sed:*)",
+      "Bash(done)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
