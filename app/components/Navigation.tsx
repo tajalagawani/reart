@@ -115,13 +115,13 @@ export default function Navigation() {
               </p>
             </div>
             <div className="flex flex-col gap-2 pt-4 border-t border-[#e3e3e3]">
-              <button className="flex items-center justify-center gap-2 h-10 px-6 py-2 rounded-2xl border border-solid border-[#141414] w-full">
-                <p className="text-[#141414] text-sm font-normal leading-6">
+              <button className="flex items-center justify-center h-10 md:h-12 px-4 md:px-6 py-2 rounded-2xl border border-solid border-[#141414] w-full">
+                <p className="text-[#141414] text-xs md:text-sm font-normal leading-6">
                   Login
                 </p>
               </button>
-              <button className="flex items-center justify-center gap-2 h-10 px-6 py-2 rounded-2xl bg-[#141414] w-full">
-                <p className="text-white text-sm font-normal leading-6">
+              <button className="flex items-center justify-center h-10 md:h-12 px-4 md:px-6 py-2 rounded-2xl bg-[#141414] w-full">
+                <p className="text-white text-xs md:text-sm font-normal leading-6">
                   Enquire membership
                 </p>
               </button>

@@ -173,7 +173,7 @@ export default function ValuePropositions() {
         ))}
       </div>
 
-      {/* Progress Indicators */}
+      {/* Progress Indicators - Fixed mobile sizing */}
       <div className="flex gap-2 items-center justify-center">
         {slides.map((_, index) => (
           <button
@@ -184,6 +184,7 @@ export default function ValuePropositions() {
                 ? "w-2 h-2 bg-white"
                 : "w-1.5 h-1.5 bg-[#8c8c8c]"
             }`}
+            style={{ minWidth: 'auto', minHeight: 'auto' }}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
