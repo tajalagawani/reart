@@ -18,8 +18,8 @@ export default function Navigation() {
                 alt="ReArt Logo"
                 className="block max-w-none w-full h-full"
                 src={logoImg}
-                width={29}
-                height={29}
+                width={40}
+                height={40}
               />
             </div>
           </div>
@@ -36,6 +36,7 @@ export default function Navigation() {
               </div>
             </div>
           </div>
+
           <div className="flex flex-row items-center self-stretch">
             <div className="flex items-center justify-center gap-1 h-full px-2 lg:px-4 py-2 rounded-2xl">
               <div className="flex flex-col justify-center">
@@ -58,12 +59,12 @@ export default function Navigation() {
 
         {/* Right Side - Buttons */}
         <div className="flex items-center justify-end gap-2 md:gap-4 shrink-0">
-          <button className="hidden sm:flex items-center justify-center h-10 px-4 md:px-6 py-2 rounded-2xl border border-solid border-[#141414]">
+          <button className="hidden sm:flex items-center justify-center gap-2 h-10 px-4 md:px-6 py-2 rounded-2xl border border-solid border-[#141414]">
             <p className="text-[#141414] text-sm font-normal leading-6">
               Login
             </p>
           </button>
-          <button className="hidden sm:flex items-center justify-center h-10 px-4 md:px-6 py-2 rounded-2xl bg-[#141414]">
+          <button className="hidden sm:flex items-center justify-center gap-2 h-10 px-4 md:px-6 py-2 rounded-2xl bg-[#141414]">
             <p className="text-white text-sm font-normal leading-6 whitespace-nowrap">
               Enquire membership
             </p>
@@ -114,12 +115,12 @@ export default function Navigation() {
               </p>
             </div>
             <div className="flex flex-col gap-2 pt-4 border-t border-[#e3e3e3]">
-              <button className="flex items-center justify-center h-10 px-6 py-2 rounded-2xl border border-solid border-[#141414] w-full">
+              <button className="flex items-center justify-center gap-2 h-10 px-6 py-2 rounded-2xl border border-solid border-[#141414] w-full">
                 <p className="text-[#141414] text-sm font-normal leading-6">
                   Login
                 </p>
               </button>
-              <button className="flex items-center justify-center h-10 px-6 py-2 rounded-2xl bg-[#141414] w-full">
+              <button className="flex items-center justify-center gap-2 h-10 px-6 py-2 rounded-2xl bg-[#141414] w-full">
                 <p className="text-white text-sm font-normal leading-6">
                   Enquire membership
                 </p>

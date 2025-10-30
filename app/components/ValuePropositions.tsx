@@ -7,6 +7,11 @@ export default function ValuePropositions() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const autoScrollInterval = useRef<NodeJS.Timeout | null>(null);
 
+  // 2025 Best Practice: Touch gesture support
+  const touchStartX = useRef<number>(0);
+  const touchEndX = useRef<number>(0);
+  const isDragging = useRef<boolean>(false);
+
   const slides = [
     {
       title: "Unique integration of Art and Real Estate",
@@ -59,21 +64,62 @@ export default function ValuePropositions() {
     setCurrentSlide(index);
   };
 
-  // Auto scroll every 5 seconds
-  useEffect(() => {
-    const startAutoScroll = () => {
-      autoScrollInterval.current = setInterval(() => {
-        setCurrentSlide((prev) => {
-          const nextSlide = (prev + 1) % slides.length;
-          scrollToSlide(nextSlide);
-          return nextSlide;
-        });
-      }, 3000); // Change slide every 3 seconds
-    };
+  // 2025 Best Practice: Touch gesture handlers
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.touches[0].clientX;
+    isDragging.current = true;
 
+    // Pause auto-scroll on touch
+    if (autoScrollInterval.current) {
+      clearInterval(autoScrollInterval.current);
+    }
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging.current) return;
+    touchEndX.current = e.touches[0].clientX;
+  };
+
+  const handleTouchEnd = () => {
+    if (!isDragging.current) return;
+    isDragging.current = false;
+
+    const swipeDistance = touchStartX.current - touchEndX.current;
+    const minSwipeDistance = 50;
+
+    if (Math.abs(swipeDistance) > minSwipeDistance) {
+      if (swipeDistance > 0 && currentSlide < slides.length - 1) {
+        // Swipe left - next slide
+        scrollToSlide(currentSlide + 1);
+      } else if (swipeDistance < 0 && currentSlide > 0) {
+        // Swipe right - previous slide
+        scrollToSlide(currentSlide - 1);
+      }
+    }
+
+    // Resume auto-scroll after a delay
+    setTimeout(startAutoScroll, 2000);
+  };
+
+  // Auto scroll with improved start/stop logic
+  const startAutoScroll = () => {
+    if (autoScrollInterval.current) {
+      clearInterval(autoScrollInterval.current);
+    }
+
+    autoScrollInterval.current = setInterval(() => {
+      setCurrentSlide((prev) => {
+        const nextSlide = (prev + 1) % slides.length;
+        scrollToSlide(nextSlide);
+        return nextSlide;
+      });
+    }, 3000);
+  };
+
+  useEffect(() => {
     startAutoScroll();
 
-    // Pause auto-scroll on hover
+    // Pause auto-scroll on hover/touch
     const container = scrollContainerRef.current;
     const handleMouseEnter = () => {
       if (autoScrollInterval.current) {
@@ -103,11 +149,14 @@ export default function ValuePropositions() {
 
   return (
     <section className="relative bg-[#141414] flex flex-col gap-8 items-center justify-center py-10 md:py-16 overflow-hidden">
-      {/* Horizontal Scroll Container */}
+      {/* Horizontal Scroll Container - 2025 Best Practice: Touch-enabled */}
       <div
         ref={scrollContainerRef}
-        className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory w-full px-4 md:px-8 lg:px-[136px] gap-4 md:gap-6 lg:gap-8"
+        className="flex overflow-x-auto scrollbar-hide snap-x snap-mandatory w-full px-4 md:px-8 lg:px-[136px] gap-4 md:gap-6 lg:gap-8 touch-pan-x"
         style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         {slides.map((slide, index) => (
           <div
@@ -143,6 +192,12 @@ export default function ValuePropositions() {
       <style jsx>{`
         .scrollbar-hide::-webkit-scrollbar {
           display: none;
+        }
+        /* 2025 Best Practice: Smooth scroll with reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+          .slide-card {
+            scroll-behavior: auto !important;
+          }
         }
       `}</style>
     </section>
