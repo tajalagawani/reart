@@ -99,12 +99,12 @@ export default function Footer() {
           </div>
 
           {/* Social Media Links */}
-          <div className="flex gap-6 items-center">
+          <div className="flex gap-3 md:gap-6 items-center">
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 h-6 relative hover:opacity-70 transition-opacity duration-200"
+              className="w-4 h-4 md:w-6 md:h-6 relative hover:opacity-70 transition-opacity duration-200"
               aria-label="Follow us on Instagram"
             >
               <Image
@@ -112,14 +112,14 @@ export default function Footer() {
                 alt="Instagram"
                 className="object-contain"
                 fill
-                sizes="24px"
+                sizes="(max-width: 768px) 16px, 24px"
               />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 h-6 relative hover:opacity-70 transition-opacity duration-200"
+              className="w-4 h-4 md:w-6 md:h-6 relative hover:opacity-70 transition-opacity duration-200"
               aria-label="Connect with us on LinkedIn"
             >
               <Image
@@ -127,14 +127,14 @@ export default function Footer() {
                 alt="LinkedIn"
                 className="object-contain"
                 fill
-                sizes="24px"
+                sizes="(max-width: 768px) 16px, 24px"
               />
             </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-6 h-6 relative hover:opacity-70 transition-opacity duration-200"
+              className="w-4 h-4 md:w-6 md:h-6 relative hover:opacity-70 transition-opacity duration-200"
               aria-label="Follow us on X (Twitter)"
             >
               <Image
@@ -142,7 +142,7 @@ export default function Footer() {
                 alt="X (Twitter)"
                 className="object-contain"
                 fill
-                sizes="24px"
+                sizes="(max-width: 768px) 16px, 24px"
               />
             </a>
           </div>
