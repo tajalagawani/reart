@@ -24,19 +24,19 @@ export default function ArtistBenefits() {
         </div>
 
         {/* Mobile Mockups */}
-        <div className="flex flex-col sm:flex-row gap-6 md:gap-8 items-center sm:items-start py-6 md:py-8 w-full justify-center">
-          <div className="w-[165px] sm:w-[185px] h-[356px] sm:h-[400px] rounded-lg overflow-hidden shadow-lg">
+        <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start py-8 w-full">
+          <div className="w-[185px] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
             <img
-              src="/museum-mobile-1.png"
-              alt="Artist Mobile View 1"
-              className="w-full h-full object-cover"
+              src="/imageslandingpage/Artist profile-1.png"
+              alt="Artist Art Pieces Gallery"
+              className="w-full h-auto"
             />
           </div>
-          <div className="w-[165px] sm:w-[185px] h-[356px] sm:h-[400px] rounded-lg overflow-hidden shadow-lg">
+          <div className="w-[185px] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
             <img
-              src="/museum-mobile-2.png"
-              alt="Artist Mobile View 2"
-              className="w-full h-full object-cover"
+              src="/imageslandingpage/Artist profile.png"
+              alt="Artist Art Property Viewings"
+              className="w-full h-auto"
             />
           </div>
         </div>
@@ -119,10 +119,10 @@ export default function ArtistBenefits() {
             </div>
 
             <div className="flex flex-col gap-2 items-start justify-center pt-4">
-              <button className="flex h-10 md:h-12 items-center justify-center px-4 md:px-6 py-2 rounded-2xl border border-solid border-[#141414] w-full max-w-[184px]">
-                <p className="text-[#141414] text-xs md:text-sm font-normal leading-6">
+              <button className="flex h-[48px] w-[184px] items-center justify-center gap-2 rounded-2xl border border-solid border-[#141414] bg-transparent hover:bg-[#141414] hover:text-white transition-colors duration-200 px-6 py-2">
+                <span className="text-[#141414] text-sm font-normal leading-6 whitespace-nowrap">
                   Enquire membership
-                </p>
+                </span>
               </button>
             </div>
           </div>

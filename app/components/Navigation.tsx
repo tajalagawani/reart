@@ -59,12 +59,12 @@ export default function Navigation() {
 
         {/* Right Side - Buttons */}
         <div className="flex items-center justify-end gap-2 md:gap-4 shrink-0">
-          <button className="hidden sm:flex items-center justify-center gap-2 h-10 px-4 md:px-6 py-2 rounded-2xl border border-solid border-[#141414]">
+          <button className="hidden sm:flex items-center justify-center h-10 px-4 md:px-6 py-2 rounded-2xl border border-solid border-[#141414]">
             <p className="text-[#141414] text-sm font-normal leading-6">
               Login
             </p>
           </button>
-          <button className="hidden sm:flex items-center justify-center gap-2 h-10 px-4 md:px-6 py-2 rounded-2xl bg-[#141414]">
+          <button className="hidden sm:flex items-center justify-center h-10 px-4 md:px-6 py-2 rounded-2xl bg-[#141414]">
             <p className="text-white text-sm font-normal leading-6 whitespace-nowrap">
               Enquire membership
             </p>
@@ -114,16 +114,16 @@ export default function Navigation() {
                 Contact us
               </p>
             </div>
-            <div className="flex flex-col gap-2 pt-4 border-t border-[#e3e3e3]">
-              <button className="flex items-center justify-center h-10 md:h-12 px-4 md:px-6 py-2 rounded-2xl border border-solid border-[#141414] w-full">
-                <p className="text-[#141414] text-xs md:text-sm font-normal leading-6">
+            <div className="flex flex-col gap-2 pt-4 border-t border-[#e3e3e3] items-center">
+              <button className="flex items-center justify-center h-10 px-4 py-2 rounded-2xl border border-solid border-[#141414]">
+                <span className="text-[#141414] text-xs font-normal leading-6">
                   Login
-                </p>
+                </span>
               </button>
-              <button className="flex items-center justify-center h-10 md:h-12 px-4 md:px-6 py-2 rounded-2xl bg-[#141414] w-full">
-                <p className="text-white text-xs md:text-sm font-normal leading-6">
+              <button className="flex items-center justify-center h-10 px-4 py-2 rounded-2xl bg-[#141414]">
+                <span className="text-white text-xs font-normal leading-6 whitespace-nowrap">
                   Enquire membership
-                </p>
+                </span>
               </button>
             </div>
           </div>
