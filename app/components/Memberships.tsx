@@ -60,7 +60,7 @@ export default function Memberships() {
                 <div className="flex gap-2 items-center w-full">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />
@@ -72,7 +72,7 @@ export default function Memberships() {
                 <div className="flex gap-3 items-center w-full">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />
@@ -84,7 +84,7 @@ export default function Memberships() {
                 <div className="flex gap-3 items-center w-full max-w-[300px]">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />
@@ -136,7 +136,7 @@ export default function Memberships() {
                 <div className="flex gap-2 items-center w-full">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />
@@ -148,7 +148,7 @@ export default function Memberships() {
                 <div className="flex gap-3 items-center w-full">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />
@@ -160,7 +160,7 @@ export default function Memberships() {
                 <div className="flex gap-3 items-center w-full">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />
@@ -209,7 +209,7 @@ export default function Memberships() {
                 <div className="flex gap-2 items-center w-full">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />
@@ -221,7 +221,7 @@ export default function Memberships() {
                 <div className="flex gap-3 items-center w-full">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />
@@ -233,7 +233,7 @@ export default function Memberships() {
                 <div className="flex gap-3 items-center w-full">
                   <div className="bg-white border border-[#f7f7fa] rounded-[20px] shrink-0 w-8 h-8 flex items-center justify-center">
                     <img
-                      src="/checkmark-icon.png"
+                      src="/checkmark-green.svg"
                       alt=""
                       className="w-4 h-3"
                     />

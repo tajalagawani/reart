@@ -9,7 +9,7 @@ export default function Navigation() {
 
   return (
     <nav className="flex items-center justify-center gap-4 md:gap-8 px-4 md:px-8 lg:px-12 py-0 bg-white w-full">
-      <div className="flex items-center gap-2 w-full max-w-[1152px]">
+      <div className="flex items-center justify-between gap-2 w-full max-w-[1152px]">
         {/* Left Side - Logo */}
         <div className="flex items-center h-14 shrink-0">
           <div className="relative w-[9.155px] h-[8.396px]">

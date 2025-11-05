@@ -35,11 +35,11 @@ export default function ReARTEcosystem() {
                 Museum or Gallery
               </p>
             </div>
-            <button className="bg-[#0177dc] flex gap-2 h-8 items-center justify-center px-3 md:px-4 py-2 rounded-2xl">
+            <div className="bg-[#0177dc] flex gap-2 h-8 items-center justify-center px-3 md:px-4 py-2 rounded-2xl">
               <p className="text-white text-xs md:text-sm font-normal leading-6">
                 Artist
               </p>
-            </button>
+            </div>
             <div className="bg-[#0177dc] flex gap-2 h-8 items-center justify-center px-3 md:px-4 py-2 rounded-2xl">
               <p className="text-white text-xs md:text-sm font-normal leading-6">
                 Real Estate Developer or Interior Design Professional

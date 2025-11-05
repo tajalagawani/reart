@@ -48,30 +48,35 @@ export default function ReARTCommunityMarketplace() {
             Made for
           </p>
           <div className="flex gap-2 items-center justify-center flex-wrap max-w-4xl px-4">
-            <div className="bg-[#0177dc] flex gap-2 items-center justify-center px-4 py-2 rounded-2xl h-8">
-              <span className="text-white text-sm font-normal leading-6">
+            <div className="bg-[#0177dc] flex items-center justify-center px-3 py-1.5 rounded-full min-h-8">
+              <p className="text-white text-xs sm:text-sm font-normal leading-tight whitespace-nowrap">
                 Artists
-              </span>
+              </p>
             </div>
-            <div className="bg-[#0177dc] flex gap-2 items-center justify-center px-4 py-2 rounded-2xl h-8">
-              <span className="text-white text-sm font-normal leading-6 text-center">
+            <div className="bg-[#0177dc] flex items-center justify-center px-3 py-1.5 rounded-full min-h-8">
+              <p className="text-white text-xs sm:text-sm font-normal leading-tight whitespace-nowrap">
                 Museums and Galleries
-              </span>
+              </p>
             </div>
-            <div className="bg-[#0177dc] flex gap-2 items-center justify-center px-4 py-2 rounded-2xl h-8">
-              <span className="text-white text-sm font-normal leading-6 text-center">
-                Real Estate Developers & Interior Design Professionals
-              </span>
+            <div className="bg-[#0177dc] flex items-center justify-center px-3 py-1.5 rounded-full min-h-8">
+              <p className="text-white text-xs sm:text-sm font-normal leading-tight whitespace-nowrap">
+                Real Estate Developers
+              </p>
             </div>
-            <div className="bg-[#0177dc] flex gap-2 items-center justify-center px-4 py-2 rounded-2xl h-8">
-              <span className="text-white text-sm font-normal leading-6 text-center">
+            <div className="bg-[#0177dc] flex items-center justify-center px-3 py-1.5 rounded-full min-h-8">
+              <p className="text-white text-xs sm:text-sm font-normal leading-tight whitespace-nowrap">
+                Interior Design Professionals
+              </p>
+            </div>
+            <div className="bg-[#0177dc] flex items-center justify-center px-3 py-1.5 rounded-full min-h-8">
+              <p className="text-white text-xs sm:text-sm font-normal leading-tight whitespace-nowrap">
                 Art Buyers and Collectors
-              </span>
+              </p>
             </div>
-            <div className="bg-[#0177dc] flex gap-2 items-center justify-center px-4 py-2 rounded-2xl h-8">
-              <span className="text-white text-sm font-normal leading-6 text-center">
+            <div className="bg-[#0177dc] flex items-center justify-center px-3 py-1.5 rounded-full min-h-8">
+              <p className="text-white text-xs sm:text-sm font-normal leading-tight whitespace-nowrap">
                 Real Estate & Property Investors
-              </span>
+              </p>
             </div>
           </div>
         </div>
