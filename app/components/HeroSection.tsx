@@ -25,7 +25,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center justify-center h-full gap-[clamp(1rem,4vw,2rem)] px-4 md:px-8 lg:px-12">
         {/* Headline */}
         <h1 className="text-white text-[clamp(1.75rem,5vw,3rem)] font-bold leading-[1.5] text-center max-w-4xl">
-          <span className="block">The Next Generation of Spaces</span>
+          <span className="block">Hello ORCHA!</span>
           <span className="block">- Art, Architecture & AR</span>
         </h1>
 
