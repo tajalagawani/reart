@@ -1,19 +1,4 @@
-# Artists Benefits Section - Figma Documentation
-
-**Figma Node ID:** 451-7090
-**Component Name:** ArtistsBenefits
-**Section Title:** How can Artists benefit from being ReART members?
-
-## Overview
-This section showcases the benefits for artists who become ReART members. It contains a heading and two rows of benefit cards, with the last position containing a call-to-action button.
-
-## Layout Structure
-
-### Container
-- Width: 1152px (centered)
-- Padding: pt-8 pb-0 px-8
-- Display: flex flex-col
-- Gap: 16px (gap-4)
+ 
 
 ### Heading
 - Text: "How can Artists benefit from being ReART members?"

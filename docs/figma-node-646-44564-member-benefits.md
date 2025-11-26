@@ -79,41 +79,7 @@ Container: w-[1072px], gap-8, items-center
 
 ### Second Row (2 cards + 1 button)
 Container: w-[1072px], gap-8, items-center
-
-#### Card 4: Increased Visibility Among Key Stakeholders
-- **Title:** "Increased Visibility Among Key Stakeholders"
-  - Font: Inter Semibold
-  - Size: 18px
-  - Line Height: 24px
-  - Color: #141414
-- **Description:** "Gain visibility among real estate developers, architects, interior designers, art buyers, and collectors - the ecosystem shaping where art lives."
-  - Font: Inter Light
-  - Size: 16px
-  - Line Height: 24px
-  - Color: #343434
-
-#### Card 5: Talent Discovery & Collaboration
-- **Title:** "Talent Discovery & Collaboration"
-  - Font: Inter Semibold
-  - Size: 18px
-  - Line Height: 24px
-  - Color: #141414
-- **Description:** "Identify and recruit emerging artists featured through ReART's ecosystem for future exhibitions or permanent collections. The platform acts as a live discovery space for curators and art directors."
-  - Font: Inter Light
-  - Size: 16px
-  - Line Height: 24px
-  - Color: #343434
-
-#### CTA Button
-- Width: 184px
-- Height: 48px
-- Padding: px-6 py-2
-- Border: 1px solid #141414
-- Border Radius: 16px (rounded-2xl)
-- Text: "Enquire membership"
-  - Font: Inter Regular
-  - Size: 14px
-  - Line Height: 24px
+ 
   - Color: #141414
 
 ## Card Styling
